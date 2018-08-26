@@ -1,0 +1,30 @@
+<div class="">
+    <div ngDraggable class="program">
+        <a [routerLink]="['']"><img class="programImg" src="{{pcIcon}}" alt="xD"></a>
+        <p class="centerText">My Pc</p>
+    </div>
+    <div ngDraggable class="program">
+        <a [routerLink]="['messages']"><img class="programImg" src="{{aolIcon}}" alt="xD"></a>
+        <p class="centerText">Messages</p>
+    </div>
+    <div ngDraggable class="program">
+        <a [routerLink]="['files']"><img class="programImg" src="{{folderIcon}}" alt="xD"></a>
+        <p class="centerText">Files</p>
+    </div>
+    <div ngDraggable class="program">
+        <a [routerLink]="['boards']"><img class="programImg" src="{{fileIcon}}" alt="xD"></a>
+        <p class="centerText">Boards</p>
+    </div>
+</div>
+<div id="window">
+    <router-outlet></router-outlet>
+</div>
+<div class="footer" *ngIf='loggedIn === false'>
+    <!-- <div class="navProgram"><a class="navitem" [routerLink]="['/']"><span><img style="height: 16px; width: 16px; margin-right: 0.25em" src="{{windowsIcon}}" alt="xD">{{ title }}</span></a></div> -->
+    <div class="navProgram"><a class="navitem" href=""><span><img style="height: 16px; width: 16px; margin-right: 0.25em" src="{{windowsIcon}}" alt="xD">{{ title }}</span></a></div>
+    <div class="navProgram"><a class="navitem" [routerLink]="['register']">Register</a></div>
+    <div class="navProgram"><a class="navitem" [routerLink]="['login']">Login</a></div>
+</div>
+<div class="footer" *ngIf='loggedIn === true'>
+<div class="navProgram"><a class="navitem" href="#"><span><img style="height: 16px; width: 16px; margin-right: 0.25em" src="{{windowsIcon}}" alt="xD">{{ title }}</span></a></div>
+</div>

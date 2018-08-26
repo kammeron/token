@@ -1,0 +1,28 @@
+<div id="window">
+	<router-outlet></router-outlet>	
+</div>
+<div [ngDraggable]=true [handle]="header" class="window">
+    <div #header id="header">
+        <h4 class="windowHeader">Files</h4>
+        <ul class="windowButtons">
+            <li class="windowButtonX"><button>X</button></li>
+            <li class="windowButtonX"><button>X</button></li>
+            <li class="windowButtonX"><button>X</button></li>
+        </ul>
+    </div>
+    <div class="content">
+        <ul>
+            <h3>Games</h3>
+            <li><a [routerLink]="['draw']">What's up with the box</a><br></li>
+            <li><a [routerLink]="['odds']">Type Racer</a><br></li>
+            <li><a [routerLink]="['']">3D Space Cadet Pinball</a><br></li>
+        </ul>
+        <ul>
+            <h3>Collaboration Apps</h3>
+            <li><a [routerLink]="['']">Graphic Design</a><br></li>
+            <li><a [routerLink]="['']">Interior Design</a><br></li>
+            <li><a [routerLink]="['']">Literature</a><br></li>
+            <li><a [routerLink]="['']">MS Paint</a><br></li>
+        </ul>
+    </div>
+</div>

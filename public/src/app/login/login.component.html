@@ -1,0 +1,24 @@
+<div [ngDraggable]=true [handle]="header" class="window">
+    <div #header id="header">
+        <h4 class="windowHeader">Login</h4>
+        <ul class="windowButtons">
+            <li class="windowButtonX"><button>X</button></li>
+            <li class="windowButtonX"><button>X</button></li>
+            <li class="windowButtonX"><button>X</button></li>
+        </ul>
+    </div>
+    <div class="content">
+        <form (submit)='login()'>
+            <div class="">
+                <p class="inputStyle">Email addy</p>
+                <input type="text" name="email" [(ngModel)]="user.email" placeholder="Enter Email"><br>
+            </div>
+            <div class="">
+                <p class="inputStyle">Password</p>
+                <input type="password" name="password" [(ngModel)]="user.password" placeholder="Enter Password"><br>
+            </div>
+            <input type="submit" value="Login"><br>
+        </form>
+        <p *ngIf='error'>{{error}}</p>
+    </div>
+</div>

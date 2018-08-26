@@ -1,0 +1,22 @@
+<div [ngDraggable]=true [handle]="header" class="window">
+    <div #header id="header">
+        <h4 class="windowHeader">Boards</h4>
+        <ul class="windowButtons">
+            <li class="windowButtonX"><button>X</button></li>
+            <li class="windowButtonX"><button>X</button></li>
+            <li class="windowButtonX"><button>X</button></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="navProgram"><a [routerLink]="['/newpost']">Add a post</a></div>
+        <div>
+            <a class="postTitle" [routerLink]="['post',5]">Post Title</a>
+            <ul>
+                <li class="flat">3 days ago •</li>
+                <li class="flat"><a href="#"> posted_by</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

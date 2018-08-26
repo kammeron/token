@@ -1,0 +1,75 @@
+.window {
+    height: 600px;
+    width: 800px;
+    background-color: #bfbfbf;
+    border: 2px solid;
+    border-bottom-color: #535353;
+    border-right-color: #535353;
+    border-left-color: #dbdbdb;
+    border-top-color: #dbdbdb;
+}
+#header {
+    height: 2em;
+    background-color: darkblue;
+}
+.windowButtons {
+    float: right;
+    list-style-type: none;
+}
+.windowHeader {
+    color: gray;
+    display: inline;
+    margin-left: 2px;
+}
+.windowButtonX {
+    background-color: gray;
+    display: inline;
+}
+.content {
+	background-color: white;
+	width: 100%;
+	height: 90%;
+    border: 2px solid;
+    border-bottom-color: #c7c7c7;
+    border-right-color: #c7c7c7;
+    padding-top: 5rem;
+    padding-left: 5rem;
+}
+.inputStyle {
+    margin: 0.25em;
+}
+.postTitle {
+    font-size: 2em;
+}
+.flat {
+    display: inline-block;
+    margin-right: 5px;
+}
+.navProgram {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    display: inline;
+    padding-top: 0.25em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    height: 90%;
+    margin-top: 1px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 2px ridge grey;
+    border-right: 2px ridge grey;
+}
+.navitem {
+    color: grey;
+    text-align: center;
+}
+.navitem:hover {
+    text-decoration: none;
+    color: darkgray;
+}
+.navProgram:active {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 2px ridge grey;
+    border-left: 2px ridge grey;
+}

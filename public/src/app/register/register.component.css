@@ -1,0 +1,40 @@
+.window {
+    height: 400px;
+    width: 600px;
+    background-color: #bfbfbf;
+    border: 2px solid;
+    border-bottom-color: #535353;
+    border-right-color: #535353;
+    border-left-color: #dbdbdb;
+    border-top-color: #dbdbdb;
+}
+#header {
+    height: 2em;
+    background-color: darkblue;
+}
+.windowButtons {
+    float: right;
+    list-style-type: none;
+}
+.windowHeader {
+    color: gray;
+    display: inline;
+    margin-left: 2px;
+}
+.windowButtonX {
+    background-color: gray;
+    display: inline;
+}
+.content {
+	background-color: white;
+	width: 100%;
+	height: 87.5%;
+    border: 2px solid;
+    border-bottom-color: #c7c7c7;
+    border-right-color: #c7c7c7;
+    padding-top: 2.5rem;
+    padding-left: 5rem;
+}
+.inputStyle {
+    margin: 0.25em;
+}
